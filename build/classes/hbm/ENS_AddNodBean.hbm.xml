@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 17 Dec, 2019 3:27:06 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="beans.ENS_AddNodBean" table="ENS_NodeMst">
+        
+        <composite-id>
+     		<key-property name="PLT" column="PLT" type="int"></key-property>
+  			<key-property name="SEC" column="SEC" type="java.lang.String"></key-property>
+  			<key-property name="NOD_NAM" column="NOD_NAM" type="java.lang.String"></key-property>   		
+    	</composite-id>
+        
+        <property name="SRNO" type="int">
+            <column name="SRNO" />
+        </property>
+        <property name="FLAG" type="java.lang.String">
+            <column name="FLAG" />
+        </property>
+        <property name="UPD_ON" type="java.util.Date">
+            <column name="UPD_ON" />
+        </property>
+        <property name="UPD_BY" type="int">
+            <column name="UPD_BY" />
+        </property>
+        <property name="USERDISP" type="java.lang.String">
+            <column name="USERDISP" />
+        </property>
+    </class>
+</hibernate-mapping>

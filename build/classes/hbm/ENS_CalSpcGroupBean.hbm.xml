@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 Feb, 2020 4:05:39 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="beans.ENS_CalSpcGroupBean" table="ENS_CalSpcGroupMst">
+        <id name="SRNO" type="int">
+            <column name="SRNO" />
+            <generator class="increment" />
+        </id>
+        <property name="PLT" type="int">
+            <column name="PLT" />
+        </property>
+        <property name="SEC" type="java.lang.String">
+            <column name="SEC" />
+        </property>
+        <property name="SPC_DATE" type="java.util.Date">
+            <column name="SPC_DATE" />
+        </property>
+        <property name="AREA_NAME" type="java.lang.String">
+            <column name="AREA_NAME" />
+        </property>
+        <property name="TOTAL_TON" type="double">
+            <column name="TOTAL_TON" />
+        </property>
+        <property name="TOTAL_SPC" type="double">
+            <column name="TOTAL_SPC" />
+        </property>
+        <property name="FLAG" type="java.lang.String">
+            <column name="FLAG" />
+        </property>
+        <property name="UPD_ON" type="java.util.Date">
+            <column name="UPD_ON" />
+        </property>
+        <property name="UPD_BY" type="int">
+            <column name="UPD_BY" />
+        </property>
+    </class>
+</hibernate-mapping>

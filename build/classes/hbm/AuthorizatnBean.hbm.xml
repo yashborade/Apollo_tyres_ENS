@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14 Feb, 2020 12:26:56 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="beans.AuthorizatnBean" table="AUTHORIZATN">
+    
+        <composite-id>
+          <key-property name="EMP_ID" column="EMPID" type="int"></key-property>
+          <key-property name="PLT" column="PLT" type="int"></key-property>
+           <key-property name="APPL" column="APPL" type="java.lang.String"></key-property>
+       </composite-id>
+       
+        <property name="UTYPE" type="java.lang.String">
+            <column name="UTYPE" />
+        </property>
+        <property name="EMAIL" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+  <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+<property name="hibernate.connection.url">jdbc:sqlserver://172.20.0.108:1433;databaseName=ENS_DB;instanceName=SQLEXPRESS;</property>
+<property name="hibernate.connection.username">sa</property>
+<property name="hibernate.connection.password">Ibm@new1</property>
+<!-- <property name="hibernate.connection.url">jdbc:sqlserver://172.20.9.84:1433;databaseName=ENS_DB;instanceName=SQLEXPRESS;</property>
+  <property name="hibernate.connection.username">sa</property>
+  <property name="hibernate.connection.password">Admin@123</property> -->
+  <property name="show_sql">true</property>
+  <property name="format_sql">true</property>
+  <property name="connection.autocommit">true</property>
+  <mapping resource="hbm/ENS_Control_No.hbm.xml"/>
+  <mapping resource="hbm/ENS_AddNodBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_UploadBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_AddMachBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_SummaryBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_AddEquipBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_AddGroupBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_CalculateGroupBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_AddProductBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_AddSpcBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_AddAreaBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_AreaGroupBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_CalAreaGroupBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_AddSpcGroupBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_CalSpcGroupBean.hbm.xml"/>
+  <mapping resource="hbm/Mail_EmailMasterBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_AreaTargetBean.hbm.xml"/>
+  <mapping resource="hbm/ENS_SpcTargetBean.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

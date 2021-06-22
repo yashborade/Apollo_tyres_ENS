@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19 Feb, 2020 10:00:52 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="beans.Mail_EmailMasterBean" table="mail_master">
+        <composite-id>
+        <key-property name="EMAIL" type="java.lang.String" column="EMAIL"></key-property>
+        <key-property name="PLT" type="int" column="PLT"></key-property>
+        <key-property name="VEN_CODE" type="java.lang.String" column="VEN_CODE"></key-property>
+        <key-property name="DEPT_NAME" type="java.lang.String" column="DEPT_NAME"></key-property>
+        
+         </composite-id>
+         <property name="VEN_ID" type="java.lang.String">
+            <column name="VEN_ID" />
+        </property>
+        <property name="VEN_NM" type="java.lang.String">
+            <column name="VEN_NM" />
+        </property>
+        <property name="FLG" type="java.lang.String">
+            <column name="FLG" />
+        </property>
+        <property name="UP_BY" type="java.util.Date">
+            <column name="UP_BY" />
+        </property>
+        <property name="UP_WHO" type="java.lang.String">
+            <column name="UP_WHO" />
+        </property>
+        <property name="USER_DISP" type="java.lang.String">
+            <column name="USER_DISP" />
+        </property>
+        <property name="FILE_NAME" type="java.lang.String">
+            <column name="FILE_NAME" />
+        </property>
+        <property name="EMAIL_FOR" type="java.lang.String">
+            <column name="EMAIL_FOR" />
+        </property> 
+    </class>
+</hibernate-mapping>

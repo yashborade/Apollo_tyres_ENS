@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 4 Feb, 2020 2:28:52 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="beans.ENS_AddProductBean" table="ENS_ProductionMst">
+        <composite-id>
+     		<key-property name="PLT" column="PLT" type="int"></key-property>
+  			<key-property name="EQUIP_NAM" column="EQUIP_NAM" type="java.lang.String"></key-property>
+  			<key-property name="BTCH_DATE" column="BTCH_DATE" type="java.util.Date"></key-property>   		
+    	</composite-id>
+        
+        <property name="SRNO" type="int">
+            <column name="SRNO" />
+        </property>
+        <property name="SEC" type="java.lang.String">
+            <column name="SEC" />
+        </property>
+        <property name="EQUIP_TOTAL" type="double">
+            <column name="EQUIP_TOTAL" />
+        </property>
+        <property name="TOT_BTCH" type="double">
+            <column name="TOT_BTCH" />
+        </property>
+        <property name="BIAS_BTCH" type="double">
+            <column name="BIAS_BTCH" />
+        </property>
+        <property name="RADIAL_BTCH" type="double">
+            <column name="RADIAL_BTCH" />
+        </property>
+        <property name="BIAS_CONSUP" type="double">
+            <column name="BIAS_CONSUP" />
+        </property>
+        <property name="RADIAL_CONSUP" type="double">
+            <column name="RADIAL_CONSUP" />
+        </property>
+        <property name="TOTAL" type="double">
+            <column name="TOTAL" />
+        </property>
+        <property name="FLAG" type="java.lang.String">
+            <column name="FLAG" />
+        </property>
+        <property name="UPD_ON" type="java.util.Date">
+            <column name="UPD_ON" />
+        </property>
+        <property name="UPD_BY" type="int">
+            <column name="UPD_BY" />
+        </property>
+    </class>
+</hibernate-mapping>

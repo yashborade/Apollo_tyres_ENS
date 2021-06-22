@@ -1,0 +1,109 @@
+form
+{
+  display: block;
+  margin: 50px auto;
+  width: 950px;
+  overflow: hidden;
+  background: #FFF;
+  border: 1px solid #ff8500;
+  border-radius: 5px;
+  font-size: 0;
+}
+
+form > div
+{
+  display: inline-block;
+  width: 50%;
+}
+
+form > div > label
+{
+  display: block;
+  padding: 5px 20px 10px;
+  vertical-align: top;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3d0877;
+  cursor: pointer;
+}
+
+form > div.col-1,form > div.col-2, form > div.col-3, form > div.col-4,form > div.col-4, form > div.col-5, form > div.col-6 { box-shadow: 1px 1px #E4E4E4 }
+
+form > div.col-1 { width: 50% }
+form > div.col-2 { width: 25% }
+form > div.col-3 { width: 33.3333333333% }
+form > div.col-4 { width: 33.3333333333% }
+form > div.col-5 { width: 33.3333333333% }
+form > div.col-6 { width: 33.3333333333% }
+form > div.col-7 { width: 100% }
+form > div.col-8 { width: 50% }
+form > div > label > input
+{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 27px;
+  line-height: 27px;
+  margin: 5px -5px 0;
+  padding: 7px 5px 3px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  outline: none;
+  border-radius: 3px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 200;
+  opacity: .66;
+  transition: opacity .3s, box-shadow .3s;
+}
+
+input[type=text]:hover,
+input[type=Date]:hover,
+input[type=comment]:hover,
+input[type=checkbox]:hover,
+input[type=textarea]:hover
+{
+    border-color: #EA7B00;
+}
+
+.selectdes:hover{
+	border-color: #EA7B00;
+}
+
+.selectchk:hover{
+	border-color: #EA7B00;
+}
+
+form > div > label > select
+{
+  display: inline-block;
+  width: 100%;
+  height: 27px;
+  margin: 16px 0 6px;
+  padding: 2px;
+  background: transparent;
+  border: 1px solid;
+  outline: none;
+  font-size: 14px;
+  font-weight: 200;
+  opacity: .0.5;
+  border-radius: 2px;
+}
+
+form > div > label > input:focus, form > div > label > select:focus
+{
+  opacity: 1;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
+}
+
+ input[type=submit], input[type=button] {
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background: #FF8500;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+    -moz-box-shadow: 1px 1px 4px #DADADA;
+    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;

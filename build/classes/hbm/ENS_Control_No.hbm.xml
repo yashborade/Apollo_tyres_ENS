@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 17 Dec, 2019 12:55:57 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="beans.ENS_Control_No" table="ENS_CN_CONTROL_NO">
+         <composite-id>
+        <key-property name="CTRLNO_DOCUMENT" column="CTRLNO_DOCUMENT" type="java.lang.String"></key-property>
+         <key-property name="FIN_YR" column="FIN_YR" type="java.lang.String"></key-property>
+       	<key-property name="PLT" column="PLT" type="int"></key-property>
+        </composite-id> 
+        
+        <property name="CTRLNO_NEXT_NO" type="int">
+            <column name="CTRLNO_NEXT_NO" />
+        </property>
+        <property name="CTRLNO_NEXT_NUM" type="java.lang.String">
+            <column name="CTRLNO_NEXT_NUM" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 Jan, 2020 1:04:00 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+
+    <class name="beans.ENS_SummaryBean" table="ENS_SummaryMst">
+    
+   	 	<composite-id>
+     		<key-property name="PLT" column="PLT" type="int"></key-property>
+     		<key-property name="NOD_NAM" column="NOD_NAM" type="java.lang.String"></key-property> 
+  			<key-property name="MACH_NAM" column="MACH_NAM" type="java.lang.String"></key-property>
+  			<key-property name="DATE" column="DATE" type="java.util.Date"></key-property>    		
+    	</composite-id>
+        <property name="SRNO" type="int">
+            <column name="SRNO" />
+        </property>
+        <property name="SEC" type="java.lang.String">
+            <column name="SEC" />
+        </property>
+         <property name="FIN_YR" type="java.lang.String">
+            <column name="FIN_YR" />
+        </property>
+        <property name="DIFF" type="double">
+            <column name="DIFF" />
+        </property>
+        <property name="FLAG" type="java.lang.String">
+            <column name="FLAG" />
+        </property>
+        <property name="UPD_ON" type="java.util.Date">
+            <column name="UPD_ON" />
+        </property>
+        <property name="UPD_BY" type="int">
+            <column name="UPD_BY" />
+        </property>
+    </class>
+</hibernate-mapping>

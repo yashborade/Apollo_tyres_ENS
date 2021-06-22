@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14 Feb, 2020 12:21:59 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="beans.EMP_INFO" table="EMP_INFO">
+        <composite-id>
+          <key-property name="EMP_ID" column="EMP_ID" type="int"></key-property>
+          <key-property name="PLT" column="PLT" type="int"></key-property>
+       </composite-id>
+       
+        <property name="EMP_NAME" type="java.lang.String">
+            <column name="EMP_NAME" />
+        </property>
+        <property name="SECT" type="java.lang.String">
+            <column name="SECT" />
+        </property>
+        <property name="EMAIL" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <property name="DEPTNAM" type="java.lang.String">
+            <column name="DEPTNAM" />
+        </property>
+        <property name="FGSDEVDEPT" type="java.lang.String">
+            <column name="FGSDEVDEPT" />
+        </property>
+    </class>
+</hibernate-mapping>
